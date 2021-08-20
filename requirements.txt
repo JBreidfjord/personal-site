@@ -16,7 +16,7 @@ pathspec==0.7.0
 pip==21.2.4
 pydantic==1.8.2
 regex==2021.8.3
-setuptools==52.0.0.post20210125
+setuptools==52.0.0
 starlette==0.14.2
 toml==0.10.2
 typed-ast==1.4.3
