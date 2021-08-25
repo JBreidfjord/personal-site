@@ -1,0 +1,9 @@
+.center {
+    text-align: center;
+}
+
+#coords {
+    position: fixed;
+    right: 20%;
+    top: 20%;
+}

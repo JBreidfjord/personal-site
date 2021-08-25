@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('yinsh-static', path='main.css') }}">
+</head>
+<body>
+    <div class="center" id="canvas-container" style="display: none;">
+        <canvas id="canvas" width="600" height="630" tabindex="0"></canvas>
+    </div>
+    <div class="center" id="select-container" style="display: none;">
+        <p>Select a side</p>
+        <input type="button" id="select-white" value="White">
+        <input type="button" id="select-black" value="Black">
+        <input type="button" id="select-random" value="Random">
+        <p>Variant</p>
+        <input type="radio" name="variant" id="variant-standard" value="standard" checked>Standard
+        <input type="radio" name="variant" id="variant-blitz" value="blitz">Blitz
+    </div>
+    <div class="center" id="rematch-container" style="display: none;">
+        <p id="outcome"></p>
+        <input type="button" id="rematch" value="Rematch">
+    </div>
+</body>
+<script type="text/javascript" src="{{ url_for('yinsh-static', path='board.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('yinsh-static', path='game.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('yinsh-static', path='main.js') }}" onload="colorSelect();"></script>

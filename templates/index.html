@@ -3,94 +3,12 @@
     <link rel="stylesheet" href="{{ url_for('static', path='main.css') }}">
 </head>
 <body>
-    <div>
-        <h4>Compound Interest Calculator</h4>
-        <form name="compound-calc" id="compound-calc">
-            <div>
-                <label for="start">Starting Value</label>
-                <input type="number" value="0" min="0" step="0.01" name="start" id="start">
-            </div>
-            <div>
-                <label for="rate">Interest Rate %</label>
-                <input type="number" value="5" step="0.01" name="rate" id="rate">
-            </div>
-            <div>
-                <label for="contrib">Annual Contribution</label>
-                <input type="number" value="0" step="0.01" name="contrib" id="contrib">
-            </div>
-            <div>
-                <label for="years">Years</label>
-                <input type="number" value="1" min="1" name="years" id="years">
-            </div>
-            <br>
-            <div>
-                <label for="output">Final Value</label>
-                <input type="number" value="0" name="output" id="output" readonly>
-            </div>
-        </form>
-    </div>
-    <br>
-    <div>
-        <h4>FIRE Calculator</h4>
-        <form name="fire-calc" id="fire-calc">
-            <div>
-                <label for="age">Current Age</label>
-                <input type="number" value="23" min="0" name="age" id="age">
-            </div>
-            <div>
-                <label for="start">Current Investment</label>
-                <input type="number" value="0" min="0" step="0.01" name="start" id="start">
-            </div>
-            <div>
-                <label for="income">Annual Income (Post-tax)</label>
-                <input type="number" value="0" min="0" step="0.01" name="income" id="income">
-            </div>
-            <div>
-                <label for="spending">Annual Spending</label>
-                <input type="number" value="0" min="0" step="0.01" name="spending" id="spending">
-            </div>
-            <div>
-                <label for="saving">Annual Saving</label>
-                <input type="number" value="0" name="saving" id="saving" readonly>
-            </div>
-            <div>
-                <label for="rate">Interest Rate %</label>
-                <input type="number" value="5" step="0.01" name="rate" id="rate">
-            </div>
-            <div>
-                <label for="growth">Income Growth %</label>
-                <input type="number" value="0" min="0" step="0.01" name="growth" id="growth">
-            </div>
-            <div>
-                <label for="income-cap">Income Cap</label>
-                <input type="number" value="0" min="0" step="0.01" name="income-cap" id="income-cap">
-            </div>
-            <div>
-                <label for="r_spending">Retirement Spending</label>
-                <input type="number" value="0" min="0" step="0.01" name="r_spending" id="r_spending">
-            </div>
-            <div>
-                <label for="wr">Target WR %</label>
-                <input type="number" value="4" min="0" step="0.01" name="wr" id="wr">
-            </div>
-            <div>
-                <label for="tax">Retirement Tax %</label>
-                <input type="number" value="20" min="0" step="0.01" name="tax" id="tax">
-            </div>
-            <div>
-                <label for="withdrawal">Annual Withdrawal</label>
-                <input type="number" value="0" name="withdrawal" id="withdrawal" readonly>
-            </div>
-            <br>
-            <div>
-                <label for="fire-target">FIRE Target</label>
-                <input type="number" value="0" name="fire-target" id="fire-target" readonly>
-            </div>
-            <div>
-                <label for="fire-age">FIRE Age</label>
-                <input type="number" value="0" name="fire-age" id="fire-age" readonly>
-            </div>
-        </form>
+    <div class="center">
+        <h2>Welcome to my site</h2>
+        <h3>Currently under construction, here is what's available:</h3>
+        <ul>
+            <li><a href="/yinsh">YINSH</a> | An abstract strategy game | Frontend in JavaScript, backend in Python</li>
+            <li><a href="/calculators">Calculators</a> | Compound interest calculator and a FIRE calculator</li>
+        </ul>
     </div>
 </body>
-<script type="text/javascript" src="{{ url_for('static', path='src/main.js') }}"></script>

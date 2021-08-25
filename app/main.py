@@ -3,18 +3,16 @@ from fastapi.requests import Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+from app.routers import calculators, yinsh
+
 app = FastAPI()
+app.include_router(calculators.router)
+app.include_router(yinsh.router)
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/calc-static", StaticFiles(directory="app/calculators/static"), name="calc-static")
+app.mount("/yinsh-static", StaticFiles(directory="app/yinsh/web/static"), name="yinsh-static")
 templates = Jinja2Templates(directory="templates")
-
-
-def compound_interest(wealth: float, rate: float, contrib: float, years: int):
-    assert years > 0 and wealth >= 0.0
-    wealth = (wealth + contrib) * (1 + rate)
-    if years == 1:
-        return wealth
-    return compound_interest(wealth, rate, contrib, years - 1)
 
 
 @app.get("/")
