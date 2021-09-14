@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('supercow-static', path='main.css') }}">
+</head>
+<body>
+    <div class="center" id="container">
+        <br>
+        <input type="file" id="image-upload" name="image-upload">
+        <input type="button" id="image-submit" name="image-submit" value="Submit">
+        <br><br>
+        <h2 id="class-desc" class="title-case"></h2>
+    </div>
+</body>
+<script type="text/javascript" src="{{ url_for('supercow-static', path='index.js') }}"></script>

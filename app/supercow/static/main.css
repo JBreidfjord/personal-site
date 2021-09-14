@@ -1,0 +1,7 @@
+.center {
+    text-align: center;
+}
+
+.title-case {
+    text-transform: capitalize;
+}
